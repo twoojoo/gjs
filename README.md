@@ -30,7 +30,7 @@ type User struct {
     Name  		string `json:"name" jsonschema:"required,minLength=3"`
     Email 		string `json:"email" jsonschema:"required,format=email"`
     Age   		int    `json:"age" jsonschema:"required,minimum=0"`
-    Description	 string `json:"description,omitempty" jsonschema:"maxLength=500"`
+    Description	 	string `json:"description,omitempty" jsonschema:"maxLength=500"`
 }
 
 func main() {
