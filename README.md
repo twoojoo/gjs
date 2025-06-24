@@ -1,6 +1,6 @@
 # gjs
 
-`gjs` is a Go package for generating and validating JSON Schemas from Go structs using generics. It leverages `github.com/invopop/jsonschema` for schema generation and `github.com/xeipuuv/gojsonschema` for schema validation.
+`gjs` is a Go utility package for generating and validating JSON Schemas from Go structs using generics. It leverages [github.com/invopop/jsonschema](https://github.com/invopop/jsonschema) for schema generation and [github.com/xeipuuv/gojsonschema](https://github.com/xeipuuv/gojsonschema) for schema validation.
 
 ## Features
 
@@ -86,16 +86,6 @@ Stores the schema JSON to a file with customizable options.
 - `WithAppend()` Option: Open the file in append mode when storing.
 - `WithTruncate()` Option: Open the file truncating existing content (default).
 - `WithPermissions(os.FileMode)` Option: Set file permissions when storing schema.
-
-Dependencies
-
-This package uses the following libraries:
-
-- [github.com/invopop/jsonschema](https://github.com/invopop/jsonschema)
-For generating JSON Schema definitions from Go structs via reflection.
-
-- [github.com/xeipuuv/gojsonschema](https://github.com/xeipuuv/gojsonschema)
-For validating JSON data against JSON Schema.
 
 ## License
 
